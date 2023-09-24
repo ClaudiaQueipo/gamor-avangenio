@@ -1,0 +1,101 @@
+.tabs-container {
+  height: 100%;
+  width: 100%;
+}
+
+.tabs {
+  display: flex;
+  position: relative;
+  background-color: var(--white-btn);
+  padding: 5px;
+  border-radius: 99px;
+  background-color: var(--tab-light);
+  border: 1px solid var(--border);
+}
+
+.tabs * {
+  z-index: 2;
+}
+
+.tabs-container input[type="radio"] {
+  display: none;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33.33%;
+  height: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 99px;
+  cursor: pointer;
+  transition: color 0.15s ease-in;
+  font-weight: bold;
+}
+
+.tabs-container .tabs label {
+  color: var(--dark);
+
+}
+
+.tabs-container input[type="radio"]:checked+label {
+  color: var(--dark);
+
+}
+
+.theme-light .tabs-container input[type="radio"]:checked+label {
+  color: var(--dark);
+}
+
+
+.tabs-container input[id="radio-1"]:checked~.glider {
+  transform: translateX(0);
+}
+
+.tabs-container input[id="radio-2"]:checked~.glider {
+  transform: translateX(110%);
+  -webkit-transform: translateX(110%);
+  -moz-transform: translateX(110%);
+  -ms-transform: translateX(110%);
+  -o-transform: translateX(110%);
+}
+
+.tabs-container input[id="radio-3"]:checked~.glider {
+  transform: translateX(220%);
+  -webkit-transform: translateX(220%);
+  -moz-transform: translateX(220%);
+  -ms-transform: translateX(220%);
+  -o-transform: translateX(220%);
+}
+
+.glider {
+  position: absolute;
+  display: flex;
+  height: 80%;
+  width: 30%;
+  background-color: var(--tab-light2);
+  z-index: 1;
+  border-radius: 99px;
+  transition: 0.25s ease-out;
+}
+
+.theme-dark .tabs {
+  background: var(--dark);
+  border: none;
+}
+
+.theme-dark .tabs-container .tabs label {
+  color: var(--light);
+
+}
+
+.theme-dark .tabs-container input[type="radio"]:checked+label {
+  color: var(--light);
+
+}
+
+.theme-dark .glider {
+  background: #32363F;
+}

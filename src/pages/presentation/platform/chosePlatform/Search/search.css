@@ -1,0 +1,108 @@
+.search-container {
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: relative;
+    height: 100%;
+    border: 1px solid var(--border);
+    background: var(--tab-light);
+}
+
+.theme-dark .search-container {
+    background: var(--dark);
+    border: none;
+}
+
+.search-title-container {
+    width: 100%;
+    padding: 6%;
+    display: flex;
+    float: left;
+    border-bottom: 1px solid rgba(156, 154, 154, 0.377);
+}
+
+.search-title {
+    font-size: .9em;
+    font-weight: bold;
+}
+
+.search-table {
+
+    width: 100%;
+    height: 70%;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+
+/***********************************************************/
+.search-btn-container {
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.108), rgba(255, 255, 255, 0.911), var(--light), var(--light), var(--light));
+    height: 35%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+    -webkit-border-radius: 0px 0px 10px 10px;
+    -moz-border-radius: 0px 0px 10px 10px;
+    -ms-border-radius: 0px 0px 10px 10px;
+    -o-border-radius: 0px 0px 10px 10px;
+
+}
+
+.theme-dark .search-btn-container {
+    background: linear-gradient(#1c20292c, #1c20296d, #232733f4, #1c2029, var(--dark), var(--dark), var(--dark));
+}
+
+.search-btn {
+    background: var(--dark-btn-account);
+    border-radius: 10px;
+    border: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    font-size: 1em;
+    color: var(--light);
+}
+
+.search-btn span {
+    font-family: 'Roboto' sans-serif !important; 
+}
+
+.search-btn:hover{
+    transform: scale(1.05);
+}
+
+.theme-dark .search-btn {
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+/****/
+.input-search, .theme-light .input-search{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    color: var(--dark);
+}
+
+.theme-dark .input-search{
+    color: var(--light);
+}
+
+.input-search:focus{
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+

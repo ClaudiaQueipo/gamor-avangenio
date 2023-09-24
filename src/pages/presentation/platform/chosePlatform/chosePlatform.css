@@ -1,0 +1,6 @@
+.chose-platform-container{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 5vh 7vh 5vh 35vh;
+    gap: 20px;
+}

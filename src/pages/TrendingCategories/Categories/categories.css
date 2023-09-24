@@ -1,0 +1,140 @@
+.categories-list-container{
+    background: var(--light-div);
+    padding: 10%;
+    border-radius: 10px;
+    position: relative;
+    
+}
+
+.theme-light .categories-list-container{
+    background: var(--light-div);
+
+}
+
+.theme-dark .categories-list-container{
+    background: var(--dark-div);
+}
+
+.categories-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    margin-top: 20px;
+    position: relative;
+    margin-bottom: 10%;
+}
+.arrow{
+    position: relative;
+    z-index: 15;
+}
+.id-categorie-list{
+    position: relative;
+    color: var(--dark);
+    font-size: .9em;
+    z-index: 15;
+}
+.theme-light .id-categorie-list{
+    color: var(--dark);
+    
+}
+.theme-dark .id-categorie-list{
+    color: var(--light);
+}
+
+.name-categorie-list{
+    position: relative;
+    font-size: 1em;
+    margin-bottom: 20px;
+    z-index: 15;
+}
+
+svg{
+    color: var(--dark);
+}
+
+.theme-dark svg{
+    color: var(--light);
+}
+
+.slash{
+    position: absolute;
+    left: 7%;
+    top: 15%;
+}
+
+.categories-list-container:nth-child(1) .slash{
+    color: var(--orange);
+}
+
+.categories-list-container:nth-child(2) .slash{
+    color: rgb(40, 40, 205);
+}
+
+.categories-list-container:nth-child(3) .slash{
+    color: rgb(135, 42, 57);
+}
+
+.categories-list-container:nth-child(4) .slash{
+    color: yellow;
+}
+
+.categories-list-container:nth-child(5) .slash{
+    color: var(--violet);
+}
+.categories-list-container:nth-child(6) .slash{
+    color: aquamarine;
+}
+.categories-list-container:nth-child(7) .slash{
+    
+}
+.categories-list-container:nth-child(8) .slash{
+    color: var(--light-div);
+}
+.theme-dark .categories-list-container:nth-child(8) .slash{
+    color: var(--dark);
+}
+
+.categories-list-container:hover .background-violet-hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+}
+.categories-list-container:hover .background-violet{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    background-color: #fe884488;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    z-index: 10;
+}
+.theme-dark .categories-list-container:hover .background-violet{
+    background-color: #7e34ee8d;
+}
+
+.background-violet-hover{
+    z-index: 1;
+}
+
+@media screen and (max-width: 900px){
+    .categories-container{
+        
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        
+    }
+}
+
+@media screen and (max-width: 576px){
+    .categories-container{
+        
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+        
+    }
+}

@@ -1,0 +1,17 @@
+
+.option-chose-platform{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.option-platform-number{
+    font-size: 1.3rem;
+    color: var(--text-light) !important;
+}
+
+.option-platform-title{
+    font-size: 1em;
+}

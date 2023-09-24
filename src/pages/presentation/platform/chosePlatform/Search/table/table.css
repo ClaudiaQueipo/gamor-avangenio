@@ -1,0 +1,115 @@
+table {
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: 100%;
+
+}
+tr:nth-child(1){
+    margin-top: 20px;
+}
+
+tr {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    height: 50px;
+    grid-template-columns: 10% 30% 30% 30%;
+    place-items: center;
+}
+
+td {
+    color: var(--dark);
+    width: 100%;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+}
+
+.theme-dark td {
+    color: var(--light);
+}
+
+.number-table {
+    color: var(--dark);
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-size: 12px;
+    background-color: #e6eef9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.theme-dark .number-table {
+    color: var(--light);
+    background: #14181e;
+}
+
+.add-btn-table {
+    width: 30px;
+    height: 30px;
+    background-color: #e6eef9;
+    color: var(--dark);
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.theme-dark .add-btn-table {
+    background-color: var(--gray-btn);
+    color: var(--light);
+}
+
+.icon-table-conatiner {
+    width: 100%;
+}
+
+.icons-table {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-user-table1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--violet);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    left: 10%;
+
+}
+
+.icon-user-table2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--orange);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}

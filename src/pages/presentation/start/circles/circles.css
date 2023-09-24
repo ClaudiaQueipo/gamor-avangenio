@@ -1,0 +1,39 @@
+.circles-container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+.oval {
+	width: 60%;
+    min-width: 200px;
+	height: 100px;
+	border-radius: 50%;
+	border: 1px solid var(--violet);
+	border-top-color: transparent;
+	background-color: transparent;
+    rotate: -20deg;
+    position: absolute;
+    z-index: 1;
+}
+
+.theme-dark .oval{
+    border: 1px solid var(--orange);
+    border-top-color: transparent;
+	background-color: transparent;
+}
+
+.circles-container .oval:nth-child(1){
+    top: 10%;
+    
+}
+.circles-container .oval:nth-child(2){
+    top: 40%;
+}
+.circles-container .oval:nth-child(3){
+    top: 60%;
+}
+

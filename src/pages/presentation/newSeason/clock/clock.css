@@ -1,0 +1,111 @@
+.clock-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.clock{
+    margin-top: 15px;
+    margin-right: 20px;
+    padding: 5px 30px;
+    background: var(--light);
+    border-radius: 30px;
+
+}
+
+.time-number,
+.theme-light .time-number{
+    color: var(--violet);
+    font-size: 1.2em;
+}
+
+.theme-dark .time-number{
+    color: var(--orange);
+}
+
+.bubble{
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 25%;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(163, 156, 156, 0.314);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  backdrop-filter: blur(2px);
+}
+.bubble svg{
+    color: white;
+}
+
+@media screen and (max-width: 1400px) {
+    .bubble{
+        left: 20%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .bubble{
+        left: 15%;
+        
+    }
+}
+@media screen and (max-width: 900px){
+    .bubble{
+        left: 37%;
+        
+    }
+    
+}
+
+@media screen and (max-width: 800px){
+    .bubble{
+        left: 35%;
+        
+    }
+    
+}
+@media screen and (max-width: 700px){
+    .bubble{
+        left: 33%;   
+    }   
+}
+
+@media screen and (max-width: 600px){
+    .bubble{
+        left: 31%;   
+    }   
+}
+
+@media screen and (max-width: 500px){
+    .bubble{
+        left: 26%;   
+    }   
+}
+
+@media screen and (max-width: 400px){
+    .bubble{
+        left: 20%;   
+        
+    }   
+}
+@media screen and (max-width: 350px){
+    .bubble{
+        left: 10%;  
+        
+    } 
+}
+@media screen and (max-width: 300px){
+    .bubble{
+        left: 10%;  
+        
+    }   
+}
+

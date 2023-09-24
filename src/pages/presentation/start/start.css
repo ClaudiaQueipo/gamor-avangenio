@@ -1,0 +1,99 @@
+.start-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 20% 10%;
+  height: 70vh;
+}
+
+span,
+.theme-light span {
+  color: var(--orange);
+}
+
+.theme-dark span {
+  color: var(--violet);
+}
+.start-title-div {
+  width: 100%;
+  position: relative;
+}
+.start-title {
+  position: relative;
+  font-size: 3rem;
+  font-weight: bolder;
+  z-index: 10;
+}
+
+.start-text {
+  margin-top: 50px;
+  font-size: 1em;
+  color: var(--gray-btn);
+}
+.theme-light .stream-party,
+.stream-party {
+  color: black;
+  font-weight: bold;
+}
+.theme-dark .stream-party {
+  color: var(--light);
+}
+.theme-light .start-text {
+  color: var(--text-dark);
+}
+.theme-dark .start-text {
+  color: var(--text-dark);
+}
+
+.start-btns {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.start-create-account {
+  background: var(--tab-light);
+  box-shadow: var(--shadow);
+  border: none;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  padding: 20px;
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.theme-dark .start-create-account {
+  background: var(--gray-btn);
+  box-shadow: 0px 10px 20px rgba(17, 17, 17, 0.384);
+}
+
+.start-create-account a {
+  color: var(--dark);
+}
+
+.theme-dark .start-create-account a {
+  color: var(--light);
+}
+
+.start-p-div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.start-p-div svg {
+  position: absolute;
+  left: 60px;
+  top: 40px;
+  width: 220px;
+  stroke: var(--violet);
+}
+
+.theme-dark .start-p-div svg {
+  stroke: var(--orange);
+}

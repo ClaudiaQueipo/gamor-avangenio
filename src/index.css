@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;700&display=swap");
+
+:root {
+  overflow: auto;
+  height: 100px;
+  scrollbar-width: none;
+  /*Firefox*/
+}
+
+:root::-webkit-scrollbar {
+  width: 0;
+}
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --light: #f1f2f5;
+  --light-div: #fafafd;
+  --white-btn: #fffeff;
+  --orange: #fe8944;
+  --orange-dark: #853e1b;
+  --violet: #7e34ee;
+  --violet-dark: #5516a1;
+  --text-light: #6b6c6f;
+  --text-dark: #808389;
+  --dark: #1c2029;
+  --dark-div: #20242d;
+  --dark-btn-account: #14161d;
+  --light-glass: #f1f2f5c5;
+  --dark-glass: #1c202996;
+  --gray-btn: #343a3f;
+  --gray: #363b41;
+  --tab-light: #fffeff;
+  --tab-light2: #f4f3f4;
+  --border: rgba(128, 128, 128, 0.171);
+  --shadow: 0px 10px 20px rgba(119, 117, 117, 0.384);
+  --shadow-smooth: 0px 10px 20px rgba(214, 211, 211, 0.384);
+  --shadow-dark: 0px 10px 20px rgba(17, 17, 17, 0.384);
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: left;
+  background: var(--light);
+  display: flex;
+  flex-direction: column;
+}
+
+.theme-light {
+  background: var(--light);
+}
+
+.theme-dark {
+  background: var(--dark);
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+a {
+  font-family: "Inter", sans-serif;
+  color: var(--text-light);
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: var(--violet);
+}
+
+.theme-dark a {
+  color: var(--text-dark);
+}
+
+.theme-dark a:hover {
+  color: var(--orange);
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+td,
+tr,
+label,
+span {
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--dark);
+}
+
+p {
+  font-family: "Inter", sans-serif;
+}
+
+.theme-light p {
+  color: var(--dark);
+}
+
+.theme-dark p {
+  color: var(--light);
+}
+
+.theme-dark h1,
+.theme-dark h2,
+.theme-dark h3,
+.theme-dark h4,
+.theme-dark h5,
+.theme-dark h6 {
+  color: var(--light);
+}
+
+section {
+  width: 80%;
+  max-width: 1280px;
+  min-height: 80vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.header-container {
+  width: 80%;
+  max-width: 1280px;
+}
+
+.container,
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+* {
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+button {
+  transition: transform 0.3s ease;
+}
+
+/* Paso 3 y 4: Aplicar los estilos en hover */
+button:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+@media screen and (max-width: 1100px) {
+  section,
+  .header-container {
+    width: 100%;
+    margin: 0% 5%;
+  }
+  .container {
+    margin-top: 50px;
+  }
+}

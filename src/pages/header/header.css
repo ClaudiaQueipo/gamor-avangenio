@@ -1,0 +1,33 @@
+.header-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /*grid-template-columns: 25% 50% 25%;*/
+    height: 20vh;
+}
+
+@media screen and (max-width: 1050px){
+    .header-container{
+        /*display: grid;
+        grid-template-columns: repeat(2,1fr);*/
+        /*grid-template-columns: 25% 50% 25%;*/
+        height: 25vh;
+    }
+    .logo-container{
+        grid-row-start: 1;
+        grid-column: span 3;
+    }
+    .navigator-container{
+        grid-row-start: 2;
+        grid-column: span 2;
+    }
+    .div-btn-cont{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+    .header-container{
+        height: 15vh;
+    }
+}

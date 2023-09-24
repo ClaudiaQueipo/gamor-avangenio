@@ -1,0 +1,62 @@
+.theme-light .newseason-container{
+    background: var(--violet);
+}
+
+.theme-dark .newseason-container{
+    background: var(--orange);
+}
+
+.newseason-container{
+    background: var(--violet);
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    display: grid;
+    grid-template-rows: 20% 15% 65%;
+    height: 70vh;
+ 
+}
+
+.season-name{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    
+    
+}
+
+.season-title{
+    font-size: 1.2rem;
+    color: var(--light);
+}
+
+.seasonn-sub-title{
+    font-size: 0.9rem;
+    color: var(--violet-dark);
+}
+
+.theme-dark .seasonn-sub-title{
+    color: var(--orange-dark);
+}
+
+
+.game-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .game-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }

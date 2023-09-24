@@ -1,0 +1,6 @@
+.trending-column{
+    display: flex;
+    flex-direction: column;
+}
+
+

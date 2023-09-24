@@ -1,0 +1,47 @@
+.nav-a{
+    font-size: 1.2rem;
+}
+
+.navigator-container{
+    width: 100%;
+}
+nav{
+    height: 100%;
+}
+
+ul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 600px){
+    .navigator-container{
+        display: none;
+    }
+}
+
+.li-nav{
+    position: relative;
+}
+
+.li-nav a{
+    position: relative;
+    z-index: 5;
+}
+
+.li-nav .oval{
+    display: none;
+    position: absolute;
+    width: 140% !important;
+    min-width: 70px !important;
+    height: 50px;
+    top: -5px;
+    left: -15px;
+    z-index: 1;
+}
+
+.li-nav:hover .oval{
+    display: block;
+}
