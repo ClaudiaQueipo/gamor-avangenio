@@ -8,7 +8,6 @@ import React, { useState } from "react";
 import Register from "./pages/register/Register";
 import { createClient } from "@supabase/supabase-js";
 
-
 const supabase = createClient(
   import.meta.env.VITE_SUPABASE_URL,
   import.meta.env.VITE_SUPABASE_ANON_KEY
@@ -43,7 +42,6 @@ function App() {
             }
           ></Route>
 
-          {/* <Route path="/login" element={<Login />} /> */}
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
         </Routes>

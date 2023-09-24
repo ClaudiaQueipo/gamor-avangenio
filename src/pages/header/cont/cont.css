@@ -4,7 +4,6 @@
     height: 100%;
     align-items: center;
     justify-content: center;
-
 }
 
 .sign-in {
@@ -12,18 +11,11 @@
     border: none;
 }
 
-.sign-in span{
-    color: var(--dark) !important;
-}
-.theme-dark .sign-in span {
-    color: var(--light) !important;
-}
-
-.sign-in a {
+.sign-in span, .sign-in a {
     color: var(--dark);
 }
 
-.theme-dark .sign-in a {
+.theme-dark .sign-in span, .theme-dark .sign-in a {
     color: var(--light);
 }
 
@@ -33,20 +25,12 @@
     border: none;
     border: 1px solid white;
     border-radius: 30px ;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
     padding: 15px;
     margin: 0 20px;
     z-index: 5;
 }
 
 .create-account a {
-    color: var(--light);
-}
-
-.theme-dark .create-account a {
     color: var(--light);
 }
 
@@ -57,14 +41,14 @@
 
 @media screen and (max-width: 1050px){
     .cont-container{
-        justify-content: end;
+        justify-content: flex-end;
     }  
 }
 
 @media screen and (max-width: 600px){
     .cont-container{
         position: absolute;
-        top: 0px;
+        top: 0;
         right: 15px;
         height: 100px;
     }

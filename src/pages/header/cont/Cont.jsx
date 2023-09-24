@@ -47,12 +47,11 @@ function Cont({ onChangeTheme }) {
           <a className="sign-in">
             <b>{username}</b>
           </a>
-          <button onClick={handleLogout} className="create-account">
-            <Link to="">Log out</Link>
-          </button>
-          {/* <button onClick={handleLogout} className="create-account">
-            <Link to="">Log out</Link>
-          </button> */}
+          <Button
+            onClick={handleLogout}
+            className="create-account"
+            text="Log out"
+          ></Button>
         </div>
       ) : (
         <div className="div-btn-cont">

@@ -16,6 +16,7 @@ const Login = () => {
   const [errorMsg, setErrorMsg] = useState("");
   const [loading, setLoading] = useState(false);
 
+
   async function handleSubmit(event) {
     event.preventDefault();
 
@@ -49,7 +50,7 @@ const Login = () => {
     setTimeout(() => {
       setErrorMsg("");
     }, 3000);
-    navigate('/')
+    navigate("/");
   }
 
   async function signInWithGoogle() {
@@ -95,14 +96,14 @@ const Login = () => {
             <h5>{errorMsg !== "" ? errorMsg : ""}</h5>
           </div>
           <br />
-          <Button
-            className="submit-btn btn-login"
-            iconClassName="icon"
-            onClick={signInWithGoogle}
-            icon={googleIcon}
-            text="Sign in with google"
-          />
         </form>
+        <Button
+          className="submit-btn btn-login"
+          iconClassName="icon"
+          onClick={signInWithGoogle}
+          icon={googleIcon}
+          text="Sign in with google"
+        />
 
         <CustomLink className="signup" href="#" text="Forgot Password?" />
         <CustomLink
