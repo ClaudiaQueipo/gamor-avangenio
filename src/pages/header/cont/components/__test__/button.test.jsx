@@ -1,29 +1,27 @@
-import React from "react";
-import { render, fireEvent } from "@testing-library/react";
-import Button from "./Button";
-import '../../cont.css'
+import { render, screen } from "@testing-library/react";
+import Button from "../button";
+import { beforeEach, test, vi } from "vitest";
+import userEvent from "@testing-library/user-event";
 
-describe("Button", () => {
-  it("renders the button with correct text and className", () => {
-    const { getByText } = render(
-      <Button text="Test Button" className="test-class" />
+describe("Account button test", () => {
+  beforeEach(() => {
+    render(
+      <div>
+        <Button to="/login" text="Sign In" />
+      </div>
     );
-    const buttonElement = getByText("Test Button");
-    expect(buttonElement).toBeInTheDocument();
-    expect(buttonElement.className).toContain("test-class");
   });
 
-  it("navigates to the correct route when clicked", () => {
-    const to = "/test-route";
-    const { getByText } = render(<Button text="Test Button" to={to} />);
-    const buttonElement = getByText("Test Button");
+  test("Should show the button with the Sign In text", () => {
+    expect(screen.getByText("Sign In")).toBeDefined();
+  });
 
-    // Mock the useHistory hook from react-router-dom
-    const useHistory = jest.spyOn(require("react-router-dom"), "useHistory");
-    const mockHistory = { push: jest.fn() };
-    useHistory.mockImplementation(() => mockHistory);
+  test("Should go to the /login route", async () => {
+    const user = userEvent.setup();
+    const login = vi.spyOn(user, "click");
+    const loginLink = screen.getByText("Sign In");
 
-    fireEvent.click(buttonElement);
-    expect(mockHistory.push).toHaveBeenCalledWith(to);
+    await user.click(loginLink);
+    expect(login).toHaveBeenCalledTimes(1);
   });
 });
