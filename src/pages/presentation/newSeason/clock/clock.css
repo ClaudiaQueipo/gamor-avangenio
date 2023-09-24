@@ -9,7 +9,7 @@
 .clock{
     margin-top: 15px;
     margin-right: 20px;
-    padding: 5px 30px;
+    padding: 10px 30px;
     background: var(--light);
     border-radius: 30px;
 
@@ -17,6 +17,8 @@
 
 .time-number,
 .theme-light .time-number{
+    font-family: 'Roboto';
+    font-weight: 700;
     color: var(--violet);
     font-size: 1.2em;
 }

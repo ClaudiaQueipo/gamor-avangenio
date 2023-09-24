@@ -12,7 +12,7 @@ function Start() {
   const location = useLocation();
 
   function handleAuthStateChange(event, session) {
-    if (event === "SIGNED_IN") {
+    if (session) {
       const { user } = session;
       setUsername(user.email.replace(/^(.*)@.*$/, "$1"));
       // navigate("/");
@@ -65,18 +65,14 @@ function Start() {
         </svg>
       </div>
       <div className="start-btns">
-        {username == null ? (
-          <div>
-            <button className="start-create-account">
-              <a href="/register">Create Account</a>
-            </button>
-            <button className="sign-in">
-              <Link to="/login">Sign In</Link>
-            </button>
-          </div>
-        ) : (
-          <div />
-        )}
+        <div>
+          <button className="start-create-account">
+            <a href="/register">Create Account</a>
+          </button>
+          <button className="sign-in">
+            <Link to="/login">Sign In</Link>
+          </button>
+        </div>
       </div>
     </div>
   );

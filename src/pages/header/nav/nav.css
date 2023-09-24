@@ -1,37 +1,38 @@
-.nav-a{
+.nav-a {
     font-size: 1.2rem;
 }
 
-.navigator-container{
+.navigator-container {
     width: 100%;
 }
-nav{
+
+nav {
     height: 100%;
 }
 
-ul{
+ul {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-@media screen and (max-width: 600px){
-    .navigator-container{
+@media screen and (max-width: 600px) {
+    .navigator-container {
         display: none;
     }
 }
 
-.li-nav{
+.li-nav {
     position: relative;
 }
 
-.li-nav a{
+.li-nav a {
     position: relative;
     z-index: 5;
 }
 
-.li-nav .oval{
+.li-nav .oval {
     display: none;
     position: absolute;
     width: 140% !important;
@@ -42,6 +43,6 @@ ul{
     z-index: 1;
 }
 
-.li-nav:hover .oval{
+.li-nav:hover .oval {
     display: block;
 }

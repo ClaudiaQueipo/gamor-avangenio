@@ -33,11 +33,14 @@
 }
 
 .season-title{
-    font-size: 1.2rem;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 1.5rem;
     color: var(--light);
 }
 
 .seasonn-sub-title{
+    margin-top: 5px;
     font-size: 0.9rem;
     color: var(--violet-dark);
 }
