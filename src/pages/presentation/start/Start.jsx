@@ -67,7 +67,7 @@ function Start() {
       <div className="start-btns">
         <div>
           <button className="start-create-account">
-            <a href="/register">Create Account</a>
+            <Link to="/register">Create Account</Link>
           </button>
           <button className="sign-in">
             <Link to="/login">Sign In</Link>
