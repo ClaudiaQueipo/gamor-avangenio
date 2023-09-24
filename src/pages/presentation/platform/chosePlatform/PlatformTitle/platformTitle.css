@@ -1,4 +1,5 @@
-.option-chose-platform {
+
+.option-chose-platform{
     width: 100%;
     height: 100%;
     display: flex;
@@ -6,12 +7,14 @@
     align-items: center;
 }
 
-.option-platform-number {
+.option-platform-number{
+    font-family: 'Roboto';
+    font-weight: 700;
     font-size: 1.3rem;
     color: var(--text-light) !important;
 }
 
-.option-platform-title {
-    font-size: 1em;
+.option-platform-title{
     margin-left: 5px;
+    font-size: 1em;
 }

@@ -12,7 +12,7 @@ function Start() {
   const location = useLocation();
 
   function handleAuthStateChange(event, session) {
-    if (session) {
+    if (event === "SIGNED_IN") {
       const { user } = session;
       setUsername(user.email.replace(/^(.*)@.*$/, "$1"));
       // navigate("/");

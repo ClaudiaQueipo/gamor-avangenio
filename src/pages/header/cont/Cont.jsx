@@ -29,7 +29,7 @@ function Cont({ onChangeTheme }) {
 
   const handleLogout = async () => {
     const { error } = await supabase.auth.signOut();
-    console.log('enter');
+
     if (!error) {
       setUsername(null);
       return;
@@ -47,11 +47,9 @@ function Cont({ onChangeTheme }) {
           <a className="sign-in">
             <b>{username}</b>
           </a>
-          <Button
-            onClick={handleLogout}
-            className="create-account"
-            text="Log out"
-          />
+          <button onClick={handleLogout} className="create-account">
+            <Link to="">Log out</Link>
+          </button>
           {/* <button onClick={handleLogout} className="create-account">
             <Link to="">Log out</Link>
           </button> */}

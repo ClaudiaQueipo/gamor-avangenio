@@ -1,12 +1,12 @@
-.theme-light .newseason-container{
+.theme-light .newseason-container {
     background: var(--violet);
 }
 
-.theme-dark .newseason-container{
+.theme-dark .newseason-container {
     background: var(--orange);
 }
 
-.newseason-container{
+.newseason-container {
     background: var(--violet);
     width: 100%;
     height: 100%;
@@ -18,34 +18,34 @@
     display: grid;
     grid-template-rows: 20% 15% 65%;
     height: 70vh;
- 
+
 }
 
-.season-name{
+.season-name {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: end;
-    
-    
+
+
 }
 
-.season-title{
+.season-title {
     font-family: 'Roboto';
     font-weight: bold;
     font-size: 1.5rem;
     color: var(--light);
 }
 
-.seasonn-sub-title{
+.seasonn-sub-title {
     margin-top: 5px;
     font-size: 0.9rem;
     color: var(--violet-dark);
 }
 
-.theme-dark .seasonn-sub-title{
+.theme-dark .seasonn-sub-title {
     color: var(--orange-dark);
 }
 
@@ -56,10 +56,10 @@
     display: flex;
     justify-content: center;
     position: relative;
-  }
-  
-  .game-img img {
+}
+
+.game-img img {
     height: 100%;
     width: 100%;
     object-fit: contain;
-  }
+}
