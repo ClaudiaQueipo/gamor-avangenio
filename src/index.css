@@ -103,8 +103,9 @@ h6,
 td,
 tr,
 label,
+a,
 span {
-  font-family: "Inter", sans-serif;
+  font-family: "Roboto";
 }
 
 h1,

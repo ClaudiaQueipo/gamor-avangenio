@@ -54,6 +54,7 @@ span,
 }
 
 .start-create-account {
+
   background: var(--tab-light);
   box-shadow: var(--shadow);
   border: none;
@@ -73,6 +74,7 @@ span,
 }
 
 .start-create-account a {
+  font-size: 1.1em;
   color: var(--dark);
 }
 
@@ -89,7 +91,7 @@ span,
 .start-p-div svg {
   position: absolute;
   left: 60px;
-  top: 40px;
+  top: 32px;
   width: 220px;
   stroke: var(--violet);
 }

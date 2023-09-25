@@ -12,9 +12,9 @@ function ChosePlatform({ onSelectPlay }) {
     };
     return (
         <div className='chose-platform-container'>
-            <PlatformTitle number="01." title="Choose Platform"></PlatformTitle>
+            <PlatformTitle number="01." title1="Choose" title2="Platform"></PlatformTitle>
             <Tabs></Tabs>
-            <PlatformTitle number="02." title="Searching Game"></PlatformTitle>
+            <PlatformTitle number="02." title1="Searching" title2="Game"></PlatformTitle>
             <Search onSelectPlay={handleSelectPlay}></Search>
             
         </div>

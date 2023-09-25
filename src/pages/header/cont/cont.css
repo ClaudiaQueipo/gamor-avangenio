@@ -11,11 +11,14 @@
     border: none;
 }
 
-.sign-in span, .sign-in a {
+.sign-in span,
+.sign-in a {
+    font-size: 1.1em;
     color: var(--dark);
 }
 
-.theme-dark .sign-in span, .theme-dark .sign-in a {
+.theme-dark .sign-in span,
+.theme-dark .sign-in a {
     color: var(--light);
 }
 
@@ -24,14 +27,16 @@
     color: white;
     border: none;
     border: 1px solid white;
-    border-radius: 30px ;
+    border-radius: 30px;
     padding: 15px;
     margin: 0 20px;
     z-index: 5;
 }
 
 .create-account a {
-    color: var(--light);
+    font-size: 1.1em;
+    font-family: 'Roboto' !important;
+    color: var(--white) !important;
 }
 
 .btn-ref {
@@ -39,14 +44,14 @@
     z-index: 10;
 }
 
-@media screen and (max-width: 1050px){
-    .cont-container{
+@media screen and (max-width: 1050px) {
+    .cont-container {
         justify-content: flex-end;
-    }  
+    }
 }
 
-@media screen and (max-width: 600px){
-    .cont-container{
+@media screen and (max-width: 600px) {
+    .cont-container {
         position: absolute;
         top: 0;
         right: 15px;

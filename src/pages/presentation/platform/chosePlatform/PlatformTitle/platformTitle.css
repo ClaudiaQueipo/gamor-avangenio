@@ -7,14 +7,18 @@
     align-items: center;
 }
 
+.bolder-text {
+    font-weight: 700;
+}
+
 .option-platform-number{
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 1.3rem;
     color: var(--text-light) !important;
 }
 
 .option-platform-title{
+    font-weight: 400;
     margin-left: 5px;
     font-size: 1em;
 }
